@@ -123,9 +123,18 @@ nav {
 
 /* ── Hero ── */
 .hero {
-  text-align: center;
   padding: 80px 24px 72px;
   background: var(--color-bg);
+}
+
+.hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
 }
 
 .app-icon {
@@ -133,7 +142,7 @@ nav {
   height: 120px;
   border-radius: 27px;
   overflow: hidden;
-  margin: 0 auto 28px;
+  flex-shrink: 0;
   box-shadow:
     0 4px 6px  rgba(0,0,0,0.10),
     0 12px 40px rgba(78,112,64,0.28),
@@ -141,12 +150,14 @@ nav {
 }
 .app-icon svg { width: 100%; height: 100%; display: block; }
 
+.hero-text { text-align: left; }
+
 .hero h1 {
   font-size: 56px;
   font-weight: 700;
   letter-spacing: -1.5px;
   line-height: 1.05;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 }
 
 .hero .tagline {
@@ -154,7 +165,6 @@ nav {
   font-weight: 400;
   color: var(--color-text-secondary);
   letter-spacing: -0.2px;
-  margin-bottom: 36px;
 }
 
 /* ── App Store badge ── */
@@ -614,7 +624,10 @@ footer p {
 
 /* ── Mobile ── */
 @media (max-width: 680px) {
-  .hero h1     { font-size: 38px; letter-spacing: -1px; }
+  .hero { padding: 64px 24px 56px; }
+  .hero-inner { flex-direction: column; gap: 24px; text-align: center; }
+  .hero-text { text-align: center; }
+  .hero h1     { font-size: 38px; letter-spacing: -1px; margin-bottom: 6px; }
   .hero .tagline { font-size: 19px; }
 
   .app-icon { width: 96px; height: 96px; border-radius: 22px; }
