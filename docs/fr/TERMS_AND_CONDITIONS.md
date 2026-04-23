@@ -1,4 +1,4 @@
-# Conditions d'utilisation
+# Conditions générales d'utilisation
 
 **Dernière mise à jour : 27 mars 2026**
 

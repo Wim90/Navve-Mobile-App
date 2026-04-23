@@ -100,6 +100,8 @@ nav {
 
 .nav-links {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 24px;
   list-style: none;
 }
@@ -110,7 +112,7 @@ nav {
   text-decoration: none;
   opacity: 0.7;
   transition: opacity 0.2s;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .nav-links a:hover         { opacity: 1; }
