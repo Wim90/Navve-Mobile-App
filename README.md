@@ -77,10 +77,12 @@ Edit the Markdown files in `docs/` and push — the live site reflects changes i
 
 ## App Store link
 
-The `.store-badge` anchor in `index.html` points to:
+The hero CTA uses Apple’s official badge artwork in `apple-badges/` (US and FR SVGs). The anchor wraps an `<img>` and points to:
 
 ```html
-<a class="store-badge" href="https://apps.apple.com/us/app/navve-save-places-trips/id6751201968">
+<a class="store-badge store-badge--apple-official" href="https://apps.apple.com/us/app/navve-save-places-trips/id6751201968">
+  <img src="apple-badges/app-store-us.svg" width="120" height="40" alt="Download on the App Store" decoding="async" />
+</a>
 ```
 
 ---

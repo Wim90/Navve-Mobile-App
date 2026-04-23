@@ -187,27 +187,21 @@ nav {
   letter-spacing: -0.2px;
 }
 
-/* ── App Store badge ── */
-.store-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--color-text);
-  color: var(--color-bg);
+/* ── App Store badge (official Apple artwork; do not crop or recolor) ── */
+.store-badge--apple-official {
+  display: inline-block;
+  line-height: 0;
   text-decoration: none;
-  border-radius: 12px;
-  padding: 10px 22px;
-  transition: background 0.2s, transform 0.15s;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  transition: opacity 0.2s;
 }
-.store-badge:hover { background: #3a3a3c; transform: scale(1.02); }
-.store-badge svg { width: 22px; height: 22px; fill: white; }
-
-.store-badge-text { text-align: left; }
-.store-badge-text span:first-child {
-  display: block; font-size: 11px; opacity: 0.75; font-weight: 400;
-}
-.store-badge-text span:last-child {
-  display: block; font-size: 17px; font-weight: 600; letter-spacing: -0.2px;
+.store-badge--apple-official:hover { opacity: 0.88; }
+.store-badge--apple-official img {
+  display: block;
+  height: 40px;
+  width: auto;
 }
 
 /* ── Section wrapper ── */
