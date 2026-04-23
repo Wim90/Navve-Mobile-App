@@ -116,6 +116,24 @@ nav {
 .nav-links a:hover         { opacity: 1; }
 .nav-links a[aria-current] { opacity: 1; font-weight: 500; color: var(--color-accent); }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 20px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+.lang-switch a {
+  color: var(--color-text);
+  text-decoration: none;
+  opacity: 0.55;
+  transition: opacity 0.2s;
+}
+.lang-switch a:hover        { opacity: 1; }
+.lang-switch a[aria-current] { opacity: 1; font-weight: 600; color: var(--color-accent); }
+.lang-switch .sep           { opacity: 0.35; }
+
 /* ── Page wrapper ── */
 .page-body {
   padding-top: var(--nav-height);

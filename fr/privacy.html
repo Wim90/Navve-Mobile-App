@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – Navve</title>
-  <meta name="description" content="Navve privacy policy. We don't collect, sell, or share your personal information." />
+  <title>Politique de confidentialité – Navve</title>
+  <meta name="description" content="Politique de confidentialité de Navve. Nous ne collectons, ne vendons ni ne partageons vos informations personnelles." />
   <link rel="alternate" hreflang="en" href="https://navve.app/privacy.html" />
   <link rel="alternate" hreflang="fr" href="https://navve.app/fr/privacy.html" />
   <link rel="alternate" hreflang="x-default" href="https://navve.app/privacy.html" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="lang.js"></script>
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../lang.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body class="page-body">
@@ -36,38 +36,38 @@
         <span class="nav-logo-name">Navve</span>
       </a>
       <ul class="nav-links">
-        <li><a href="support.html">Support</a></li>
-        <li><a href="privacy.html" aria-current="page">Privacy</a></li>
-        <li><a href="terms.html">Terms</a></li>
+        <li><a href="support.html">Assistance</a></li>
+        <li><a href="privacy.html" aria-current="page">Confidentialité</a></li>
+        <li><a href="terms.html">Conditions</a></li>
       </ul>
-      <div class="lang-switch" aria-label="Language">
-        <a href="privacy.html" data-lang="en" aria-current="page">EN</a>
+      <div class="lang-switch" aria-label="Langue">
+        <a href="../privacy.html" data-lang="en">EN</a>
         <span class="sep">/</span>
-        <a href="fr/privacy.html" data-lang="fr">FR</a>
+        <a href="privacy.html" data-lang="fr" aria-current="page">FR</a>
       </div>
     </div>
   </nav>
 
-  <!-- ── Page hero ── -->
+  <!-- ── En-tête ── -->
   <div class="page-hero">
-    <p class="section-label">Legal</p>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: March 27, 2026</p>
+    <p class="section-label">Mentions légales</p>
+    <h1>Politique de confidentialité</h1>
+    <p class="updated">Dernière mise à jour : 27 mars 2026</p>
   </div>
 
-  <!-- ── Markdown content ── -->
+  <!-- ── Contenu Markdown ── -->
   <div class="md-content" id="privacy-content">
-    <p class="md-loading">Loading privacy policy…</p>
+    <p class="md-loading">Chargement de la politique de confidentialité…</p>
   </div>
 
-  <!-- ── Footer ── -->
+  <!-- ── Pied de page ── -->
   <footer>
     <div class="footer-inner">
       <p>&copy; 2025 Navve &mdash; WimsightLabs</p>
       <ul class="footer-links">
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Politique de confidentialité</a></li>
+        <li><a href="terms.html">Conditions</a></li>
+        <li><a href="support.html">Assistance</a></li>
         <li><a id="footer-email-link" href="#">Contact</a></li>
       </ul>
     </div>
@@ -80,15 +80,14 @@
         const res = await fetch(path);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const md = await res.text();
-        // Strip the h1 title — the page hero already shows it
-        const body = md.replace(/^#\s+.+\n/, '').replace(/\*\*Last Updated:[^*]+\*\*\n?/, '');
+        const body = md.replace(/^#\s+.+\n/, '').replace(/\*\*Dernière mise à jour[^*]+\*\*\n?/, '');
         el.innerHTML = marked.parse(body);
       } catch (err) {
-        el.innerHTML = `<p class="md-error">Unable to load content. Please try refreshing.</p>`;
+        el.innerHTML = `<p class="md-error">Impossible de charger le contenu. Veuillez actualiser la page.</p>`;
         console.error('Failed to load markdown:', path, err);
       }
     }
-    loadMarkdown('docs/PRIVACY_POLICY.md', 'privacy-content');
+    loadMarkdown('../docs/fr/PRIVACY_POLICY.md', 'privacy-content');
   </script>
   <script>
     (function () {
