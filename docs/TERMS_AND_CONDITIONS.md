@@ -1,6 +1,6 @@
 # Terms and Conditions
 
-**Last Updated: March 27, 2026**
+**Last Updated: October 12, 2026**
 
 Welcome to Navve! These terms are designed to be clear and fair. By using Navve, you agree to these terms. If you have questions, contact us at admin@wimsightlabs.com
 
@@ -10,9 +10,9 @@ Welcome to Navve! These terms are designed to be clear and fair. By using Navve,
 
 Navve helps you save, organize, and share the places that matter to you. Add places your way: share directly from Apple Maps, paste an Apple Maps link, drop in any address, or enter details manually. The app works on your device, and if you're signed in to iCloud, your data is automatically backed up (you can disable this in your device settings if you prefer).
 
-**Collections** let you group your saved places into named lists — for example, "Weekend Spots" or "Restaurants to Try." You can add places to one or more collections, reorder them, and share a collection with others.
+**Collections** let you group your saved places into named lists — for example, "Weekend Spots" or "Restaurants to Try." You can add places to one or more collections, reorder them, and share a collection with others using Messages or AirDrop.
 
-**Trip Plan** is a special collection mode designed for travel. When you turn on Trip Plan for a collection, you can assign each place to a specific day and time slot (Morning, Lunch, Afternoon, Dinner, Evening), set your travel dates, and export a shareable day-by-day itinerary.
+**Trip Plan** is a special collection mode designed for travel. When you turn on Trip Plan for a collection, you can assign each place to a specific day and time slot (Morning, Lunch, Afternoon, Dinner, Evening), set your travel dates, and share your day-by-day itinerary using Messages or AirDrop.
 
 ---
 
@@ -44,6 +44,7 @@ Please use Navve responsibly. Don't:
 - Try to hack or break the app
 - Share or redistribute the app's code
 - Use the app in ways that harm others or the service
+- Use sharing to harass others or to send places or information you don't have the right to share
 
 *Basically: use Navve to save and organize places, and be respectful.*
 
